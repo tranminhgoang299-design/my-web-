@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fff4f7">
+<title>Thiệp sinh nhật · Minh Hoàng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script><script src="script.js" defer></script>
+</head>
+<body>
+<div class="grain"></div><span class="doodle d1">✦</span><span class="doodle d2">♡</span><span class="doodle d3">✿</span><span class="doodle d4">✧</span>
+<main class="shell">
+  <header class="topline">✦ &nbsp; A LITTLE SOMETHING FOR YOU &nbsp; ✦</header>
+  <section id="envelope-screen" class="envelope-screen">
+    <p class="eyebrow">pssst... bí mật nè!</p><h1>Có một điều<br><em>bất ngờ</em> dành cho bạn</h1>
+    <p class="subtitle">Một chiếc thư bé xinh đang chờ được mở đó 💌</p>
+    <div class="envelope-stage"><span class="sticker cat">🐱</span><span class="sticker star">⭐</span><span class="sticker bear">🧸</span>
+      <div class="envelope" id="envelope"><div class="back"></div><div class="letter"><small>YOU'RE</small><b>INVITED!</b><span>♡</span></div><div class="front"></div><div class="flap"></div><div class="seal">♡</div><div class="stamp">FOR<br>YOU</div></div>
+    </div>
+    <p class="hint">Chạm để mở món quà bí mật nhé!</p><button id="open-letter" class="btn primary">💌 Mở thư <span>↗</span></button>
+    <p class="micro">made with a little love & lots of sprinkles</p>
+  </section>
+
+  <section id="invitation-screen" class="hidden">
+    <p class="section-label">✿ &nbsp; A DAY TO CELEBRATE &nbsp; ✿</p>
+    <article class="card"><div class="tape left"></div><div class="tape right"></div>
+      <div class="card-top"><span>♡ SPECIAL INVITATION ♡</span><span>NO. 018</span></div>
+      <div class="cake-art"><span class="spark a">✦</span><span class="candle">🕯️</span><span class="cake">🎂</span><span class="spark b">✧</span></div>
+      <p class="invite-tag">🎉 YOU'RE INVITED! 🎉</p><h2>Hế lô bạn iu!</h2>
+      <p class="intro">Bạn đã nhận được <strong>giấy triệu tập</strong> tham dự một sự kiện cực kỳ quan trọng:<br><b class="pink">SINH NHẬT CỦA MINH HOÀNG!</b></p>
+      <div class="details"><div class="detail"><span>📅</span><div><small>NGÀY HẸN</small><b>18/10/2026</b></div></div><div class="detail purple"><span>⏰</span><div><small>GIỜ HẸN</small><b>13:00 · 1 giờ chiều</b></div></div><div class="detail mint"><span>📍</span><div><small>ĐỊA ĐIỂM</small><b>Tại gia 🏡</b></div></div></div>
+      <p class="message">Sự xuất hiện của bạn chính là món quà tuyệt nhất rồi! Nhớ đến chung vui, ăn bánh, chụp ảnh và tạo thêm thật nhiều kỷ niệm đáng nhớ nhé!</p><p class="joke">Không nhận lý do “quên lịch” đâu nha! 💖</p>
+      <div class="cat-note">🐱 &nbsp; Đã đọc thư là phải cân nhắc đi đó nha! &nbsp; ♡</div>
+      <footer class="card-footer"><span>WITH LOVE,</span><b>MINH HOÀNG ♡</b><span>18 · 10 · 2026</span></footer>
+    </article>
+    <section class="count-section"><p class="eyebrow">SAVE THE DATE!</p><h2>Còn bao lâu nữa nhỉ? ⏳</h2><div id="countdown" class="countdown"><div class="time"><b id="days">--</b><small>NGÀY</small></div><i>:</i><div class="time"><b id="hours">--</b><small>GIỜ</small></div><i>:</i><div class="time"><b id="minutes">--</b><small>PHÚT</small></div><i>:</i><div class="time"><b id="seconds">--</b><small>GIÂY</small></div></div><p id="count-message">Nhớ giữ lịch cho buổi hẹn siêu vui này nha! ✨</p></section>
+    <section class="rsvp"><p class="section-label">♡ &nbsp; YOUR TURN &nbsp; ♡</p><h2>Vậy bạn có đến hong? 🥹</h2><p class="subtitle">Trả lời một tiếng để chủ tiệc còn chuẩn bị bánh nè!</p>
+      <div class="actions"><button id="attend" class="btn primary">🎉 Okeee, mình sẽ đến!</button><button id="wish" class="btn secondary">💌 Gửi lời chúc</button></div><p id="feedback" role="status"></p>
+      <div id="name-box" class="name-box hidden"><label for="guest-name">Tên của bạn là gì nè?</label><div class="name-row"><input id="guest-name" maxlength="60" placeholder="Tên bạn..."><button id="confirm" class="btn small">Xác nhận</button></div><small>Thiệp chưa có máy chủ nhận phản hồi. Hệ thống sẽ tạo tin nhắn để bạn sao chép gửi Hoàng.</small></div>
+    </section>
+    <footer class="ending"><div class="footer-stickers">🎈　🍰　🧸</div><p class="eyebrow">THANK YOU FOR OPENING THIS LITTLE LETTER</p><h2>Cảm ơn bạn đã mở<br>chiếc phong bì này! 💌</h2><p>Hẹn gặp bạn vào ngày đặc biệt nhé!</p><p class="made">Made with <b>♡</b> by <strong>Minh Hoàng</strong></p><button id="share" class="share">🔗 Chia sẻ thiệp</button></footer>
+  </section>
+</main>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="scrim" id="scrim"></div><div class="modal-card"><button id="close" class="close" aria-label="Đóng">×</button><div class="modal-emoji">💌</div><p class="eyebrow">A TINY MESSAGE FOR THE BIRTHDAY STAR</p><h2 id="modal-title">Gửi Hoàng lời chúc nha! 💖</h2><form id="wish-form"><label for="wish-name">Tên của bạn</label><input id="wish-name" maxlength="60" placeholder="Tên bạn" required><label for="wish-text">Lời chúc đáng yêu</label><textarea id="wish-text" rows="4" maxlength="500" placeholder="Chúc Hoàng tuổi mới..." required></textarea><button class="btn primary submit" type="submit">✨ Tạo lời chúc</button></form><div id="wish-result" class="hidden"><p>Lời chúc đã sẵn sàng! Sao chép rồi gửi cho Hoàng nhé 💌</p><textarea id="generated" rows="5" readonly></textarea><button id="copy-wish" class="btn secondary submit">📋 Sao chép lời chúc</button><p id="copy-feedback" class="form-hint" role="status"></p></div></div></div>
+<div id="toast" class="toast" role="status"></div><button id="music" class="music hidden" aria-pressed="false">♫ Nhạc: tắt</button>
+</body></html>
